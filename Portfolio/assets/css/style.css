@@ -1,0 +1,440 @@
+/* inter-regular - latin */
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/inter-v7-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("../fonts/inter-v7-latin-regular.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/inter-v7-latin-regular.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/inter-v7-latin-regular.woff")
+      format("woff"),
+    /* Modern Browsers */ url("../fonts/inter-v7-latin-regular.ttf")
+      format("truetype"); /* Safari, Android, iOS */
+}
+/* inter-200 - latin */
+@font-face {
+  font-family: "Inter-200";
+  font-style: normal;
+  font-weight: 200;
+  src: url("../fonts/inter-v7-latin-200.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("../fonts/inter-v7-latin-200.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/inter-v7-latin-200.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/inter-v7-latin-200.woff")
+      format("woff"),
+    /* Modern Browsers */ url("../fonts/inter-v7-latin-200.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */ url("../fonts/inter-v7-latin-200.svg#Inter")
+      format("svg"); /* Legacy iOS */
+}
+/* merriweather-regular - latin */
+@font-face {
+  font-family: "Merriweather";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/merriweather-v28-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("../fonts/merriweather-v28-latin-regular.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/merriweather-v28-latin-regular.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("../fonts/merriweather-v28-latin-regular.woff") format("woff"),
+    /* Modern Browsers */ url("../fonts/merriweather-v28-latin-regular.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../fonts/merriweather-v28-latin-regular.svg#Merriweather")
+      format("svg"); /* Legacy iOS */
+}
+/* merriweather-700 - latin */
+@font-face {
+  font-family: "Merriweather";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/merriweather-v28-latin-700.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("../fonts/merriweather-v28-latin-700.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/merriweather-v28-latin-700.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/merriweather-v28-latin-700.woff")
+      format("woff"),
+    /* Modern Browsers */ url("../fonts/merriweather-v28-latin-700.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../fonts/merriweather-v28-latin-700.svg#Merriweather") format("svg"); /* Legacy iOS */
+}
+/* merriweather-900 - latin */
+@font-face {
+  font-family: "Merriweather";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/merriweather-v28-latin-900.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("../fonts/merriweather-v28-latin-900.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/merriweather-v28-latin-900.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/merriweather-v28-latin-900.woff")
+      format("woff"),
+    /* Modern Browsers */ url("../fonts/merriweather-v28-latin-900.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../fonts/merriweather-v28-latin-900.svg#Merriweather") format("svg"); /* Legacy iOS */
+}
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+body {
+  font-family: Inter-200;
+  font-style: normal;
+  font-size: 20px;
+  font-weight: 50;
+  line-height: 1.2;
+  font-weight: normal;
+  color: #fff;
+  background: #000;
+}
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.header {
+  background: url("../img/bg.svg");
+  background-repeat: no-repeat;
+  background-position: center 0;
+  height: 90px;
+}
+.header__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  align-content: center;
+  height: 90px;
+}
+.header__logo {
+  margin-left: 20px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: 0.3s;
+}
+.header__logo:hover {
+  filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
+    contrast(87%);
+}
+.header__nav {
+  margin-left: auto;
+  height: 50px;
+  width: 500px;
+}
+.header__list {
+  display: flex;
+  align-content: center;
+  justify-content: space-around;
+}
+.header__item {
+  box-sizing: content-box;
+  height: 100%;
+}
+.header__link {
+  font-size: 20px;
+  line-height: 50px;
+  color: #fff;
+  text-decoration: none;
+}
+.switch__lang {
+  height: 50;
+  width: 70;
+}
+.lang {
+  font-size: 20px;
+  line-height: 50px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+.active__lang {
+  font-size: 20px;
+  line-height: 50px;
+  color: #fff;
+  text-decoration: none;
+  color: #bdae82;
+  font-weight: bold;
+}
+.main {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.hero__background {
+  background-image: url("../img/bg.svg");
+  background-position: center -90px;
+  background-repeat: no-repeat;
+  height: 910px;
+}
+.hero__text {
+  height: 330px;
+  width: 500px;
+  padding-top: 200px;
+  padding-left: 80px;
+}
+.hero__title {
+  font-family: Merriweather;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 120px;
+  color: #fff;
+}
+.hero__discription {
+  height: 120px;
+  width: 470px;
+  font-size: 20px;
+  line-height: 40px;
+}
+.button__gold {
+  height: 55px;
+  width: 220px;
+  color: black;
+  font-family: Inter;
+}
+.hero__button {
+  margin-top: 35px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 0;
+  border-radius: 0;
+  background: #ccc;
+  background-color: #bdae82;
+  cursor: pointer;
+  font-size: 20px;
+  line-height: 40px;
+  height: 100%;
+  width: 100%;
+}
+.skills {
+  height: 482px;
+}
+.section__title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+
+  margin-bottom: 60px;
+  height: 80px;
+  width: 700px;
+}
+hr {
+  border: none;
+  background-color: #bdae82;
+  color: #bdae82;
+  height: 20px;
+}
+.title__h2 {
+  text-align: center;
+  width: 152px;
+  font-family: Merriweather;
+  font-style: bold;
+  line-height: 80px;
+  font-size: 40px;
+  height: 80px;
+  color: #bdae82;
+  background-color: #000;
+}
+.skills__list {
+  display: flex;
+  justify-content: space-between;
+  height: 242px;
+}
+.skill {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+}
+.skill__title {
+  font-family: Inter-200;
+  font-style: bold;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 40px;
+  color: #fff;
+}
+.skill__discription {
+  font-family: Inter-200;
+  font-size: 18px;
+  line-height: 36px;
+  color: #fff;
+  text-align: center;
+  max-width: 280px;
+}
+.portfolio {
+  height: 1500px;
+}
+.portfolio__btn {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  max-width: 895px;
+  margin: auto;
+}
+.button__transparent {
+  height: 55px;
+  width: 220px;
+  border: 10, solid, #bdae82;
+  font-family: Inter;
+}
+.button__season {
+  background-color: transparent;
+  height: 55px;
+  width: 220px;
+  font-family: Inter-200;
+  font-weight: 900;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 10, solid, #bdae82;
+  border-radius: 1;
+  color: #bdae82;
+  cursor: pointer;
+  font-size: 20px;
+  line-height: 40px;
+  height: 100%;
+  width: 100%;
+}
+.autumn__button {
+  height: 55px;
+  width: 220px;
+  font-family: Inter-200;
+  font-weight: 900;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 1, solid, #bdae82;
+  border-radius: 1;
+  color: #000;
+  cursor: pointer;
+  font-size: 20px;
+  line-height: 40px;
+  height: 100%;
+  width: 100%;
+  background-color: #bdae82;
+}
+.portfolio__items {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  height: 1145px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 60px;
+}
+.portfolio__image {
+  height: 560px;
+  width: 450px;
+}
+.video {
+  height: 945px;
+}
+.video__player {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hover__btn {
+  position: absolute;
+}
+.price {
+  height: 845px;
+  align-content: center;
+}
+.price__title{
+    font-family: Merriweather;
+    font-style: bold;
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 56px;
+}
+.price__cost{
+    font-family: Merriweather;
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 48px;
+    color: #bdae82;
+}
+.service{
+    height:505px;
+    border-radius: 1;
+    border: 1px, solid, #bdae82;
+}
+.price__comment{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+.price__discription{
+    margin-top: 20px;
+}
+.contact{
+    height:700px;
+}
+.footer {
+	display: flex;
+    max-width: 1440px;
+    margin: auto;
+	align-items: center;
+	justify-content: space-between;
+	align-items: center;
+	height: 150px;
+	color: white;
+	background-color: #000;
+}
+.footer-left{
+    display: flex;
+    justify-content: center;
+    height:50px;
+    width:200px;
+    justify-content: space-around;
+    align-content: center;
+}
+.footer-github {
+	color:#fff;
+	text-decoration: none;
+    font-size: 20px;
+    line-height: 50px;
+}
+.footer-year {
+	color:#fff;
+    font-size: 20px;
+    line-height: 50px;
+}
+.footer-rsschool{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    line-height: 50px;
+}
+.yat{
+    font-size: 20px;
+    line-height: 50px;
+}
+.social{
+    display: flex;
+    justify-content: center;
+    width:200px;
+    height:50px;
+}
+
+.social__img{
+    margin-right: 10px;
+}
